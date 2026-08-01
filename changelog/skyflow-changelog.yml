@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/release-notes
+url: https://docs.skyflow.com/release-notes
+scheme: dated-release-notes
+note: >-
+  Skyflow publishes a dated release-notes / changelog in its docs. The page is
+  client-side rendered, so individual dated entries could not be extracted
+  verbatim in this pass; the canonical live page is the source of truth.
+sdk_versions_observed:
+- {package: skyflow (pypi), version: 2.1.2}
+- {package: skyflow-node (npm), version: 2.1.2}
+- {package: skyflow-js (npm), version: 2.7.9}
+- {package: skyflow-react-js (npm), version: 2.5.5}
+- {package: 'com.skyflow:skyflow-java (maven)', version: 2.0.0-beta.2}
+entries: []

@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: Data API resources are versioned in the URI path (/v1/vaults/...).
+  docs: https://docs.skyflow.com/api/data
+environments:
+  sandbox: https://{vaultID}.vault.skyflowapis-preview.com
+  production: https://{vaultID}.vault.skyflowapis.com
+  reference: https://docs.skyflow.com/docs/fundamentals/accounts-and-environments
+status_page: https://status.skyflow.com
+release_notes: https://docs.skyflow.com/release-notes
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation/Sunset-header policy located.
+deployment_models:
+- Multi-tenant SaaS
+- Virtual Private Skyflow (VPS)
+- Bring Your Own Cloud (BYOC)
+deployment_models_docs: https://docs.skyflow.com/docs/fundamentals/deployment-models

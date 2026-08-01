@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.skyflow.com/api/data
+note: >-
+  Derived from the documented Skyflow Data API and Management API resource
+  structure (/v1/vaults/{vaultID}/{objectName}...). Entities and relationships
+  reflect documented paths and payloads.
+entities:
+- name: Vault
+  description: A data privacy vault; the isolation and governance boundary for sensitive data.
+  id_path: /v1/vaults/{vaultID}
+  relationships:
+  - {type: has_many, target: Object, via: objectName}
+  - {type: has_many, target: File}
+- name: Object
+  description: A table/schema within a vault holding records.
+  id_path: /v1/vaults/{vaultID}/{objectName}
+  relationships:
+  - {type: belongs_to, target: Vault, via: vaultID}
+  - {type: has_many, target: Record}
+- name: Record
+  description: A row of field values in an object; sensitive values map to Tokens.
+  id_path: /v1/vaults/{vaultID}/{objectName}/{skyflow_id}
+  relationships:
+  - {type: belongs_to, target: Object, via: objectName}
+  - {type: has_many, target: Token, via: tokenization}
+- name: Token
+  description: A non-sensitive surrogate returned for a field value; convert via tokenize/detokenize.
+  relationships:
+  - {type: belongs_to, target: Record}
+- name: File
+  description: A file stored in a vault field; supports upload, scan-status, and delete.
+  relationships:
+  - {type: belongs_to, target: Vault, via: vaultID}
+- name: ServiceAccount
+  description: Machine identity used to generate bearer tokens; scoped by roles and policies.
+  relationships:
+  - {type: has_many, target: Role}
+- name: Role
+  description: A set of permissions/policies assigned to a service account for a resource.
+  relationships:
+  - {type: has_many, target: Policy}
+- name: Policy
+  description: Fine-grained data-governance rule controlling who can access what data, when, and how.

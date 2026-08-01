@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.skyflow.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 10 23:23:11 2026 GMT
+  hsts: false
+- host: docs.skyflow.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 14 15:18:39 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+- host: manage.skyflowapis.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 13 07:31:38 2026 GMT
+  hsts: null
+domains:
+- domain: skyflow.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: skyflowapis.com
+  dnssec: true
+  caa: []
+  spf: false
+  dmarc: false

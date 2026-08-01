@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/api/data
+docs: https://docs.skyflow.com/docs/fundamentals/api-authentication
+authentication:
+  style: bearer
+  detail: JWT bearer token (RFC 6750) or long-lived API key in Authorization header
+  ref: authentication/skyflow-authentication.yml
+base_urls:
+  production: https://{vaultID}.vault.skyflowapis.com
+  sandbox: https://{vaultID}.vault.skyflowapis-preview.com
+  management: https://manage.skyflowapis.com
+idempotency:
+  idempotency_key_header: false
+  note: >-
+    Skyflow does not document an Idempotency-Key header. Idempotent inserts are
+    expressed with the `upsert` body parameter on insert-records — when set to a
+    unique column, a matching record is updated instead of duplicated. This is
+    upsert semantics, not a generic idempotency-key contract.
+tokenization:
+  note: >-
+    Insert/data operations return tokens in place of sensitive values when
+    `tokenization: true`; detokenize/tokenize convert between tokens and values.
+error_envelope:
+  format: json
+  fields: [error]
+  detail: Errors return an `error` object with `http_code`, `grpc_code`, `http_status`, `message`, and `details`.
+versioning:
+  scheme: uri-path
+  detail: Data API resources are versioned in the URI path (e.g. /v1/vaults/{vaultID}).
+content_type: application/json
+cross_links:
+  authentication: authentication/skyflow-authentication.yml
+  errors: errors/skyflow-problem-types.yml
+  lifecycle: lifecycle/skyflow-lifecycle.yml
+  data_model: data-model/skyflow-data-model.yml

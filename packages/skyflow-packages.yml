@@ -1,0 +1,71 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/skyflowapi
+docs: https://docs.skyflow.com/docs/sdks/overview
+packages:
+- language: python
+  registry: pypi
+  name: skyflow
+  url: https://pypi.org/project/skyflow/
+  install: pip install skyflow
+  version: 2.1.2
+  repo: https://github.com/skyflowapi/skyflow-python
+  official: true
+- language: nodejs
+  registry: npm
+  name: skyflow-node
+  url: https://www.npmjs.com/package/skyflow-node
+  install: npm install skyflow-node
+  version: 2.1.2
+  repo: https://github.com/skyflowapi/skyflow-node
+  official: true
+- language: javascript
+  registry: npm
+  name: skyflow-js
+  url: https://www.npmjs.com/package/skyflow-js
+  install: npm install skyflow-js
+  version: 2.7.9
+  repo: https://github.com/skyflowapi/skyflow-js
+  official: true
+- language: javascript
+  registry: npm
+  name: skyflow-react-js
+  url: https://www.npmjs.com/package/skyflow-react-js
+  install: npm install skyflow-react-js
+  version: 2.5.5
+  repo: https://github.com/skyflowapi/skyflow-react-js
+  official: true
+- language: javascript
+  registry: npm
+  name: skyflow-react-native
+  url: https://www.npmjs.com/package/skyflow-react-native
+  install: npm install skyflow-react-native
+  repo: https://github.com/skyflowapi/skyflow-react-native
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/skyflowapi/skyflow-go
+  url: https://pkg.go.dev/github.com/skyflowapi/skyflow-go
+  install: go get github.com/skyflowapi/skyflow-go
+  repo: https://github.com/skyflowapi/skyflow-go
+  official: true
+- language: java
+  registry: maven-central
+  name: com.skyflow:skyflow-java
+  url: https://central.sonatype.com/artifact/com.skyflow/skyflow-java
+  install: implementation 'com.skyflow:skyflow-java:2.0.0-beta.2'
+  version: 2.0.0-beta.2
+  repo: https://github.com/skyflowapi/skyflow-java
+  official: true
+- language: kotlin
+  registry: github
+  name: skyflow-android
+  url: https://github.com/skyflowapi/skyflow-android
+  repo: https://github.com/skyflowapi/skyflow-android
+  official: true
+- language: swift
+  registry: github
+  name: skyflow-iOS
+  url: https://github.com/skyflowapi/skyflow-iOS
+  repo: https://github.com/skyflowapi/skyflow-iOS
+  official: true

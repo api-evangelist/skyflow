@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.skyflow.com/api/data
+note: >-
+  Derived from the Skyflow Data API documented error responses. Every operation
+  returns an `error_response` envelope on failure. Skyflow does NOT use RFC 9457
+  application/problem+json; it uses a gRPC-derived error object.
+format: skyflow-error
+envelope:
+  shape: '{"error": {"grpc_code": int, "http_code": int, "http_status": string, "message": string, "details": []}}'
+  fields:
+    grpc_code: gRPC status code (see https://grpc.io/docs/guides/status-codes)
+    http_code: HTTP status code
+    http_status: HTTP status text
+    message: human-readable error message
+    details: additional error details
+problems:
+- status: 400
+  title: Bad Request
+  meaning: The request was malformed or contained invalid parameters/field values.
+- status: 401
+  title: Unauthorized
+  meaning: Missing, expired, or invalid bearer token / API key.
+- status: 403
+  title: Forbidden
+  meaning: The service account's roles/policies do not permit this action on the resource.
+- status: 404
+  title: Not Found
+  meaning: The vault, object, record, or file does not exist.
+- status: 409
+  title: Conflict
+  meaning: The request conflicts with the current state (e.g. duplicate on a unique column without upsert).
+- status: 429
+  title: Too Many Requests
+  meaning: Rate limit exceeded.
+- status: 500
+  title: Internal Server Error
+  meaning: An unexpected error occurred processing the request.

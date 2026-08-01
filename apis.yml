@@ -1,8 +1,15 @@
 aid: skyflow
 name: Skyflow
-description: Skyflow is a company surfaced as a portfolio company of insight-partners, seedcamp and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Skyflow is a data privacy vault platform that lets companies isolate,
+  protect, and govern sensitive customer data (PII, PCI, PHI) and secrets in
+  a zero-trust vault, then use it safely through tokenization, encryption,
+  polymorphic de-identification, and fine-grained data governance. Developers
+  integrate via the REST Data API and Management API plus first-party SDKs for
+  Python, Node.js, Go, Java, JavaScript, React, React Native, Android, and iOS,
+  and client-side Skyflow Elements for securely collecting and revealing data.
+  Skyflow also ships an MCP Data Protection layer for agentic AI. Backed by
+  Insight Partners and Seedcamp.
 url: https://raw.githubusercontent.com/api-evangelist/skyflow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,17 +18,126 @@ x-backed-by:
 - seedcamp
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://avatars.githubusercontent.com/u/72233674?v=4
 tags:
 - Company
-apis: []
+- Data Privacy
+- PII
+- Tokenization
+- Data Security
+- Vault
+- Compliance
+- PCI
+- Encryption
+- Data Governance
+apis:
+- name: Skyflow Data API
+  description: >-
+    Insert, retrieve, tokenize/detokenize, query, and manage records and files
+    in a Skyflow data privacy vault. Authenticated with a JWT bearer token or
+    API key (RFC 6750). Base URLs are per-vault under the skyflowapis.com
+    (production) and skyflowapis-preview.com (sandbox) domains.
+  humanURL: https://docs.skyflow.com/api/data
+  baseURL: https://{vaultID}.vault.skyflowapis.com
+  properties:
+  - type: APIReference
+    url: https://docs.skyflow.com/api/data
+  - type: Authentication
+    url: https://docs.skyflow.com/docs/fundamentals/api-authentication
+- name: Skyflow Management API
+  description: >-
+    Create and manage vaults, workspaces, service accounts, roles, policies,
+    and other account resources. Authenticated with a JWT bearer token.
+  humanURL: https://docs.skyflow.com/api/management
+  baseURL: https://manage.skyflowapis.com
+  properties:
+  - type: APIReference
+    url: https://docs.skyflow.com/api/management
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/skyflow-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/skyflow-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.skyflow.com/security
+- type: DomainSecurity
+  url: security/skyflow-domain-security.yml
 - type: Website
   url: https://www.skyflow.com/
+- type: DeveloperPortal
+  url: https://docs.skyflow.com/
+- type: Documentation
+  url: https://docs.skyflow.com/
+- type: APIReference
+  url: https://docs.skyflow.com/api/data
+- type: GettingStarted
+  url: https://docs.skyflow.com/get-started/
+- type: SDKs
+  url: packages/skyflow-packages.yml
+- type: Packages
+  url: packages/skyflow-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/skyflowapi
+- type: Blog
+  url: https://www.skyflow.com/blog
+- type: Pricing
+  url: https://www.skyflow.com/pricing
+- type: SignUp
+  url: https://www.skyflow.com/try-skyflow
+- type: TermsOfService
+  url: https://www.skyflow.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.skyflow.com/privacy-policy
+- type: Postman
+  url: https://www.postman.com/skyflow
+- type: StatusPage
+  url: https://status.skyflow.com
+- type: Compliance
+  url: https://docs.skyflow.com/docs/fundamentals/compliance-certifications
+- type: Authentication
+  url: authentication/skyflow-authentication.yml
+- type: MCPServer
+  url: mcp/skyflow-mcp.yml
+- type: LLMsTxt
+  url: llms/skyflow-llms.txt
+- type: WellKnown
+  url: well-known/skyflow-well-known.yml
+- type: Conventions
+  url: conventions/skyflow-conventions.yml
+- type: ChangeLog
+  url: changelog/skyflow-changelog.yml
+- type: Lifecycle
+  url: lifecycle/skyflow-lifecycle.yml
+- type: Conformance
+  url: conformance/skyflow-conformance.yml
+- type: ErrorCatalog
+  url: errors/skyflow-problem-types.yml
+- type: DataModel
+  url: data-model/skyflow-data-model.yml
+- type: Components
+  url: components/skyflow-components.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 16
+  pass: local-v1

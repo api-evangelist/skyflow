@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/docs/elements/collect-and-reveal-tutorial
+docs: https://docs.skyflow.com/docs/sdks/overview
+description: >-
+  Skyflow Elements are client-side embeddable UI components that securely
+  collect and reveal sensitive data (PII/PCI) directly between the browser/app
+  and the vault, so raw values never touch the customer's own servers.
+families:
+- name: Collect Elements
+  description: Input fields that securely gather sensitive data and return tokens from the vault.
+  element_types: [INPUT_FIELD, CARD_NUMBER, EXPIRATION_DATE, CVV, CARDHOLDER_NAME, PIN, EXPIRATION_MONTH, EXPIRATION_YEAR]
+  note: Element type list reflects Skyflow Elements documentation; INPUT_FIELD confirmed in the collect-and-reveal tutorial.
+- name: Reveal Elements
+  description: Display components that use tokens to retrieve and render data from the vault.
+loaders:
+- name: skyflow-js
+  loader: https://js.skyflow.com/v1/index.js
+  url: https://github.com/skyflowapi/skyflow-js
+- name: skyflow-react-js
+  url: https://github.com/skyflowapi/skyflow-react-js
+- name: skyflow-react-native
+  url: https://github.com/skyflowapi/skyflow-react-native
+- name: skyflow-iOS
+  url: https://github.com/skyflowapi/skyflow-iOS
+- name: skyflow-android
+  url: https://github.com/skyflowapi/skyflow-android

@@ -1,0 +1,64 @@
+# Skyflow | Documentation
+
+## Instructions for AI Agents
+
+- For clean Markdown of any page, append `.md` to the page URL
+- For section-specific indexes, append `/llms.txt` to any section URL
+- For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.skyflow.com/_mcp/server
+
+## Docs
+
+- [Welcome to Skyflow](https://docs.skyflow.com/docs/fundamentals/home.md): Guides, demos, and samples to help you build with Skyflow.
+- [Why Skyflow?](https://docs.skyflow.com/docs/fundamentals/product-overview.md)
+- [Protect PII](https://docs.skyflow.com/docs/fundamentals/patterns/pii.md)
+- [Protect PCI](https://docs.skyflow.com/docs/fundamentals/patterns/pci.md)
+- [Protect LLMs](https://docs.skyflow.com/docs/fundamentals/patterns/llm-privacy.md)
+- [Protect data analytics](https://docs.skyflow.com/docs/fundamentals/patterns/analytics.md)
+- [Data residency](https://docs.skyflow.com/docs/fundamentals/patterns/data-residency.md)
+- [Get started with Skyflow](https://docs.skyflow.com/docs/fundamentals/get-started.md): Make your first API calls to Skyflow.
+- [Explore what Skyflow can do](https://docs.skyflow.com/docs/fundamentals/explore-skyflow.md)
+- [Build and go live with Skyflow](https://docs.skyflow.com/docs/fundamentals/implement/overview.md)
+- [Define your solution](https://docs.skyflow.com/docs/fundamentals/implement/define.md)
+- [Build your solution](https://docs.skyflow.com/docs/fundamentals/implement/build.md)
+- [Go live](https://docs.skyflow.com/docs/fundamentals/implement/go-live.md)
+- [Authenticate](https://docs.skyflow.com/docs/fundamentals/api-authentication.md)
+- [Accounts and environments](https://docs.skyflow.com/docs/fundamentals/accounts-and-environments.md)
+- [Deployment models](https://docs.skyflow.com/docs/fundamentals/deployment-models.md): Compare Skyflow's deployment models (Multi-tenant SaaS, Virtual Private Skyflow, and Bring Your Own Cloud) to choose the right fit for your security, compliance, and infrastructure requirements.
+- [Security Best Practices Checklist](https://docs.skyflow.com/docs/fundamentals/security-best-practices.md): Skyflow's security best practices checklist helps you implement security measures to protect your data and ensure compliance with industry standards.
+- [Compliance and certifications](https://docs.skyflow.com/docs/fundamentals/compliance-certifications.md): Skyflow's platform environment and team adhere to industry-leading security certifications and compliance standards.
+- [Vault data with Skyflow](https://docs.skyflow.com/docs/fundamentals/get-data-into-skyflow.md)
+- [Agents](https://docs.skyflow.com/docs/fundamentals/agents.md): Overview of how Skyflow supports building with AI coding agents and protecting sensitive data flowing through the agents and apps you build.
+- [Platform FAQ](https://docs.skyflow.com/docs/fundamentals/faq.md): Frequently asked questions about Skyflow accounts, environments, and developer APIs
+- [Data governance overview](https://docs.skyflow.com/docs/governance/overview.md): Learn about Skyflow's data governance capabilities.
+- [Tokenization](https://docs.skyflow.com/docs/tokenization/overview.md)
+- [Connections overview](https://docs.skyflow.com/docs/connections/overview.md)
+- [Functions](https://docs.skyflow.com/docs/processing/functions/overview.md)
+- [De-identify and protect sensitive data](https://docs.skyflow.com/docs/de-identification/overview.md)
+- [SDKs](https://docs.skyflow.com/docs/sdks/overview.md): Integrate with Skyflow's client-side and server-side SDKs to securely collect, store, and use sensitive data.
+- [Collect and reveal data with Skyflow Elements](https://docs.skyflow.com/docs/elements/collect-and-reveal-tutorial.md)
+- [Data API](https://docs.skyflow.com/api/data.md)
+
+## API Docs
+
+- Data API > Audit [List Data Audit Events](https://docs.skyflow.com/api/data/audit/list-data-audit-events.md)
+- Data API > Records [Batch Operation](https://docs.skyflow.com/api/data/records/batch-operation.md)
+- Data API > Records [Get Records](https://docs.skyflow.com/api/data/records/get-records.md)
+- Data API > Records [Insert Records](https://docs.skyflow.com/api/data/records/insert-records.md)
+- Data API > Records [Delete Records](https://docs.skyflow.com/api/data/records/delete-records.md)
+- Data API > Records [Get Record By ID](https://docs.skyflow.com/api/data/records/get-record-by-id.md)
+- Data API > Records [Update Record](https://docs.skyflow.com/api/data/records/update-record.md)
+- Data API > Records [Delete Record](https://docs.skyflow.com/api/data/records/delete-record.md)
+- Data API > Tokens [Detokenize](https://docs.skyflow.com/api/data/tokens/detokenize.md)
+- Data API > Tokens [Tokenize](https://docs.skyflow.com/api/data/tokens/tokenize.md)
+- Data API > Query [Execute Query](https://docs.skyflow.com/api/data/query/execute-query.md)
+- Data API > Files [Upload File](https://docs.skyflow.com/api/data/files/upload-file.md)
+- Data API > Files [Delete File](https://docs.skyflow.com/api/data/files/delete-file.md)
+- Data API > Files [Get File Scan Status](https://docs.skyflow.com/api/data/files/get-file-scan-status.md)
+- Data API > Files [Get Files Upload Status](https://docs.skyflow.com/api/data/files/get-files-upload-status.md)
+- Data API > Files [Get File Upload URL](https://docs.skyflow.com/api/data/files/get-file-upload-urls.md)
+
+## OpenAPI Specification
+
+The raw OpenAPI 3.1 specification for this API is available at:
+- [OpenAPI JSON](https://docs.skyflow.com/openapi.json)
+- [OpenAPI YAML](https://docs.skyflow.com/openapi.yaml)

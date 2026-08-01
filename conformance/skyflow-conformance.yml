@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/docs/fundamentals/compliance-certifications
+compliance_program: https://www.skyflow.com/security
+standards:
+- id: soc2-type-ii
+  conforms: true
+  evidence: SOC 2 Type II Certified (https://www.skyflow.com/post/skyflow-is-certified-soc-2-compliant)
+- id: iso-27001-2022
+  conforms: true
+  evidence: ISO/IEC 27001:2022 Certified
+- id: pci-dss-level-1
+  conforms: true
+  evidence: PCI DSS Level 1 Service Provider Certified
+- id: hipaa
+  conforms: true
+  evidence: HIPAA Assessed and Eligible
+- id: gdpr
+  conforms: true
+  evidence: GDPR Assessed and Compliant
+- id: eu-us-dpf
+  conforms: true
+  evidence: EU-US Data Privacy Framework listed
+- id: mastercard-sdp
+  conforms: true
+  evidence: Mastercard Site Data Protection Compliant Registered Service Provider
+- id: visa-global-registry
+  conforms: true
+  evidence: Visa Global Registry Registered Service Provider
+- id: oauth2-bearer-rfc6750
+  conforms: true
+  evidence: JWT bearer tokens follow RFC 6750 (docs api-authentication)
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Data API uses a gRPC-derived error_response envelope, not application/problem+json

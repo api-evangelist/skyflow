@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://docs.skyflow.com/llms.txt
+server:
+  name: skyflow-docs
+  description: >-
+    Skyflow's documentation MCP server for AI clients (Claude Code, Cursor,
+    etc.). Exposes Skyflow's docs and API reference over the Model Context
+    Protocol so agents can retrieve accurate build guidance.
+  transport: http
+  url: https://docs.skyflow.com/_mcp/server
+related:
+- name: Skyflow MCP Data Protection Layer / MCP Gateway
+  description: >-
+    Skyflow product that protects sensitive data flowing between AI agents and
+    backend systems over MCP (de-identification/tokenization gateway). This is
+    a data-protection product, not a tool-serving MCP server for the Skyflow API.
+  url: https://www.skyflow.com/post/building-secure-ai-agent-architecture-mcp
+notes: >-
+  The Data API itself (openapi.json) is auth-gated, so a tool-per-operation
+  server is not derived here. Candidate Data API operations that a future MCP
+  server could expose: insertRecords, getRecords, getRecordById, updateRecord,
+  deleteRecord, tokenize, detokenize, executeQuery, uploadFile,
+  listDataAuditEvents.

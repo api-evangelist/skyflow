@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.skyflow.com/docs/fundamentals/api-authentication
+docs: https://docs.skyflow.com/docs/fundamentals/api-authentication
+summary:
+  types: [http, apiKey]
+  http_schemes: [bearer]
+  bearer_format: JWT
+  standards: [RFC 6750]
+schemes:
+- name: BearerToken
+  type: http
+  scheme: bearer
+  bearer_format: JWT
+  description: >-
+    JWT bearer token (recommended). Time-limited (SDK-generated tokens are
+    valid for 60 minutes). Generated from a service account's credentials.json
+    via a Skyflow SDK, a Python script, or Skyflow Studio. Matches the RFC 6750
+    Authorization Bearer Token Header spec. Scoped by the roles/policies
+    attached to the service account; supports context-aware authentication
+    (context_identifier injected into the token).
+  applies_to: [Data API, Management API, SDKs]
+- name: ApiKey
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: >-
+    Long-lived API key, presented as a bearer credential in the Authorization
+    header. Alternative to JWT bearer tokens; use only with a valid business
+    need. Scoped by service-account roles/policies.
+  applies_to: [Data API, Management API]
+identity:
+  service_accounts: true
+  credentials_artifact: credentials.json
+  context_aware_auth: https://docs.skyflow.com/docs/governance/context-aware-auth/overview

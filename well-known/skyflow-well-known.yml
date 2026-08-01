@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+hosts:
+- host: https://docs.skyflow.com
+  documents:
+  - path: /.well-known/api-catalog
+    status: 200
+    file: skyflow-api-catalog.json
+    note: RFC 9727 api-catalog; linkset present but empty
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://www.skyflow.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+- host: https://manage.skyflowapis.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 401
+    note: auth-gated API host
+mcp:
+- path: /_mcp/server
+  host: https://docs.skyflow.com
+  status: 200
+  note: Documentation MCP server (Model Context Protocol) for AI clients
