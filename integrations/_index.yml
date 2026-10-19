@@ -16,3 +16,153 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: skyflow-go-module-proxy
+  label: Go module proxy
+  partner_name: Go module proxy
+  category: official SDK (Go)
+  type: register
+  channel: package-registry
+  evidence: https://pkg.go.dev/github.com/skyflowapi/skyflow-go
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: github.com/skyflowapi/skyflow-go
+      version: v1.10.3
+      released: '2026-05-27'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/github.com/skyflowapi/skyflow-go
+      repo_leg: github-org:skyflowapi
+      publisher_leg: org:skyflowapi
+      matched_by: github-org
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: skyflow-maven-central
+  label: Maven Central
+  partner: maven-central
+  partner_name: Maven Central
+  category: official SDK (Java/JVM)
+  type: register
+  channel: package-registry
+  evidence: https://central.sonatype.com/artifact/com.skyflow/skyflow-java
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Maven Central (public registry JSON)
+    spec_file: null
+    language: Java/JVM
+    packages:
+    - name: com.skyflow:skyflow-java
+      version: 3.0.0-beta.13
+      released: '2026-07-29'
+      released_field: lastUpdated
+      lapsed: false
+      page: https://central.sonatype.com/artifact/com.skyflow/skyflow-java
+      repo_leg: github-org:skyflowapi
+      publisher_leg: groupId:skyflow.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: skyflow-npm-registry
+  label: npm registry
+  partner: npm
+  partner_name: npm registry
+  category: official SDK (JavaScript/TypeScript)
+  type: register
+  channel: package-registry
+  evidence: https://www.npmjs.com/package/skyflow-js
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: skyflow-js
+      version: 2.8.0
+      released: '2026-09-22'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/skyflow-js
+      repo_leg: github-org:skyflowapi
+      publisher_leg: email:skyflow.com
+      matched_by: domain
+    - name: skyflow-node
+      version: 2.1.2
+      released: '2026-06-25'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/skyflow-node
+      repo_leg: github-org:skyflowapi
+      publisher_leg: email:skyflow.com
+      matched_by: domain
+    - name: skyflow-react-js
+      version: 2.5.5
+      released: '2026-06-18'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/skyflow-react-js
+      repo_leg: github-org:skyflowapi
+      publisher_leg: email:skyflow.com
+      matched_by: domain
+    - name: skyflow-react-native
+      version: 1.10.6
+      released: '2026-06-19'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/skyflow-react-native
+      repo_leg: github-org:skyflowapi
+      publisher_leg: email:skyflow.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
+- slug: skyflow-pypi
+  label: PyPI
+  partner: pypi
+  partner_name: PyPI
+  category: official SDK (Python)
+  type: register
+  channel: package-registry
+  evidence: https://pypi.org/project/skyflow/
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: skyflow
+      version: 2.1.3
+      released: '2026-08-04'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/skyflow/
+      repo_leg: github-org:skyflowapi
+      publisher_leg: email:skyflow.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
