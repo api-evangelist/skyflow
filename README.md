@@ -64,6 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Skyflow is a company surfaced as a portfolio company of insight-partners, seedcamp and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Skyflow is a data privacy vault platform that lets companies isolate, protect, and govern sensitive customer data (PII, PCI, PHI) and secrets in a zero-trust vault, then use it safely through tokenization, encryption, polymorphic de-identification, and fine-grained data governance. Developers integrate via the REST Data API and Management API plus first-party SDKs for Python, Node.js, Go, Java, JavaScript, React, React Native, Android, and iOS, and client-side Skyflow Elements for securely collecting and revealing data. Skyflow also ships an MCP Data Protection layer for agentic AI. Backed by Insight Partners and Seedcamp.
 
-Backed by: insight-partners, seedcamp — https://www.skyflow.com/
+**Areas:** Company · Privacy · PII · Tokenization · Data Security · Vault · Compliance · PCI · Encryption · Data Governance
+
+## Skyflow on APIs.io
+
+Everything profiled for Skyflow is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/skyflow/](https://apis.io/providers/skyflow/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Skyflow Data API](https://apis.io/apis/skyflow/skyflow-data-api/) — Insert, retrieve, tokenize/detokenize, query, and manage records and files in a Skyflow data privacy vault. Authenticated with a JWT bearer token or API key…
+- [Skyflow Management API](https://apis.io/apis/skyflow/skyflow-management-api/) — Create and manage vaults, workspaces, service accounts, roles, policies, and other account resources. Authenticated with a JWT bearer token.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [skyflow-docs](https://apis.io/servers/skyflow/skyflow-docs/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Skyflow Authentication](https://apis.io/security/skyflow/skyflow-authentication/)
+- [Skyflow Domain Security](https://apis.io/security/skyflow/skyflow-domain-security/)
+- [Skyflow Trust Center](https://apis.io/security/skyflow/skyflow-trust-center/)
+- [Skyflow Vulnerability Disclosure](https://apis.io/security/skyflow/skyflow-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.skyflow.com/)
+- [Documentation](https://docs.skyflow.com/)
+- [Getting started](https://docs.skyflow.com/get-started/)
+- [API reference](https://docs.skyflow.com/api/data)
+- [Pricing](https://www.skyflow.com/pricing)
+- [Sign up](https://www.skyflow.com/try-skyflow)
+- [Blog](https://www.skyflow.com/blog)
+- [Security](https://www.skyflow.com/security)
+- [Compliance](https://docs.skyflow.com/docs/fundamentals/compliance-certifications)
+- [Terms of service](https://www.skyflow.com/terms-of-service)
+- [Privacy policy](https://www.skyflow.com/privacy-policy)
+- [GitHub](https://github.com/skyflowapi)
+- [Status](https://status.skyflow.com)
+
+## API Evangelist rating
+
+**Kin Score 40.5** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 61.9 |
+| Access clarity | 60.5 |
+
+**Agent readiness 9.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 32.1** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/skyflow/](https://apis.io/providers/skyflow/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Skyflow: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/skyflow/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
